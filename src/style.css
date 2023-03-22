@@ -16,6 +16,7 @@ body {
 
 section {
   padding-top: 8rem;
+  margin-top: -3rem;
 }
 
 h1,
@@ -163,9 +164,9 @@ a:hover {
 }
 
 .line-mf {
-  width: 40px;
+  width: 60px;
   height: 5px;
-  background-color: #fff;
+  background-color: #66b3ff;
   margin: 0 auto;
 }
 
@@ -268,7 +269,7 @@ a:hover {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #fff;
+  box-shadow: 0 0 0 10px #66b3ff;
   display: block;
 }
 
@@ -728,32 +729,44 @@ a:hover {
   background-color: #fff;
 }
 
+.personal-info p {
+  margin-bottom: 0.5rem;
+}
+
 /*======================================
 //--//-->   SERVICES
 ======================================*/
 
 .service-box {
-  background-color: #fff;
+  background-color: #181818;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: #66b3ff;
   box-shadow: 0 0 0 10px #cde1f8;
 }
 
 .service-box .service-ico {
   margin-bottom: 1rem;
-  color: #1e1e1e;
+  color: #66b3ff;
 }
 
 .service-box .ico-circle {
   transition: all 500ms ease;
   font-size: 4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
 }
 
 .service-box .s-title {
@@ -764,7 +777,8 @@ a:hover {
 }
 
 .service-box .s-description {
-  color: #4e4e4e;
+  color: #c9c9c9;
+  margin: 0;
 }
 
 /*======================================

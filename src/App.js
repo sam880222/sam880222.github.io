@@ -7,6 +7,7 @@ import "./style.css";
 import "animate.css";
 import Experience from "./containers/Experience";
 import Projects from "./containers/Projects";
+import Skills from "./containers/Skills";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
+      <Skills />
       <Experience />
       <Projects />
     </div>

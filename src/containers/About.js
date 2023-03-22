@@ -1,122 +1,84 @@
-import { Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 const About = () => {
   return (
     <section id="about" className="about-mf route">
-      <div className="container">
-        <Row>
-          <div className="col-sm-12">
-            <div className="title-box text-center">
-              <h3 className="title-a">About Me</h3>
-              <div className="line-mf"></div>
-            </div>
-          </div>
-        </Row>
-        <Row>
-          <div className="col-sm-12">
-            <div className="box-shadow-full">
-              <div className="row">
-                <Col md={6}>
-                  <img
-                    src="img/avatar.jpg"
-                    className="img-fluid b-shadow-a"
-                    width="50%"
-                    alt=""
-                    style={{ borderRadius: 8 }}
-                  />
-                  <h3 style={{ margin: "2rem auto" }}>Po-Hsiang Hsu</h3>
-                  <Row
-                    style={{
-                      textAlign: "start",
-                      margin: "auto",
-                      width: "100%",
-                      flexDirection: "row",
-                      justifyContent: "space-around",
-                    }}
-                  >
-                    <Col
-                      xs="auto"
-                      style={{
-                        textTransform: "uppercase",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      <p>D.O.B</p>
-                      <p>Email</p>
-                      <p>Phone</p>
-                      <p>Major</p>
-                    </Col>
-                    <Col xs="auto">
-                      <p>
-                        Feb. 22, 1999 (
-                        {Math.round(
-                          (Date.now() - 919654380000) / 1000 / 3600 / 24 / 365
-                        ) + " y/o"}
-                        )
-                      </p>
-                      <p>sam880222@gmail.com</p>
-                      <p>0983-320-260</p>
-                      <p>Computer Science</p>
-                    </Col>
-                  </Row>
+      <Container style={{ maxWidth: 750 }}>
+        <Col>
+          {/* <div className="box-shadow-full"> */}
+          <Row>
+            <Col
+              md={5}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                src="img/avatar.jpg"
+                className="img-fluid b-shadow-a"
+                width="70%"
+                alt=""
+                style={{ borderRadius: 8, maxWidth: 300 }}
+              />
+            </Col>
+            <Col
+              md={7}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
+            >
+              <h4 style={{ marginTop: "1rem" }}>About Me</h4>
+              <div
+                style={{
+                  backgroundColor: "#66b3ff",
+                  height: 2,
+                  width: "90%",
+                  margin: "auto",
+                }}
+              />
+              <Row
+                className="personal-info"
+                style={{
+                  textAlign: "start",
+                  margin: "1rem auto",
+                  width: "100%",
+                  maxWidth: 400,
+                  flexDirection: "row",
+                  justifyContent: "space-around",
+                }}
+              >
+                <Col
+                  xs="auto"
+                  style={{
+                    textTransform: "uppercase",
+                    fontWeight: "bold",
+                  }}
+                >
+                  <p>Name</p>
+                  <p>Age</p>
+                  <p>Email</p>
+                  <p>Phone</p>
                 </Col>
-                <div className="col-md-6">
-                  <div className="about-me pt-4 pt-md-0">
-                    <div className="title-box-2">
-                      <h5>Skills</h5>
-                      <span>HTML</span> <span className="pull-right">85%</span>
-                      <div className="progress">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          style={{ width: "85%" }}
-                          aria-valuenow="85"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                      <span>CSS3</span> <span className="pull-right">75%</span>
-                      <div className="progress">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          style={{ width: "75%" }}
-                          aria-valuenow="75"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                      <span>PHP</span> <span className="pull-right">50%</span>
-                      <div className="progress">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          style={{ width: "50%" }}
-                          aria-valuenow="50"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                      <span>JAVASCRIPT</span>{" "}
-                      <span className="pull-right">90%</span>
-                      <div className="progress">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          style={{ width: "90%" }}
-                          aria-valuenow="90"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Row>
-      </div>
+                <Col xs="auto">
+                  <p>Po-Hsiang Hsu（許博翔）</p>
+                  <p>
+                    {Math.round(
+                      (Date.now() - 919654380000) / 1000 / 3600 / 24 / 365
+                    )}
+                  </p>
+                  <p>sam880222@gmail.com</p>
+                  <p>0983-320-260</p>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Col>
+      </Container>
     </section>
   );
 };

@@ -12,7 +12,6 @@ const ProjectItem = ({
       style={{ padding: "0px 1rem 4rem" }}
     >
       <Card
-        border="dark"
         style={{ backgroundColor: "#181818", padding: 0, overflow: "hidden" }}
       >
         {!video ? (
