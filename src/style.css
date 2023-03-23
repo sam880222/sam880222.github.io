@@ -95,7 +95,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #fff;
+  background-color: #000;
 }
 
 .overlay-mf {
@@ -125,6 +125,12 @@ a:hover {
   padding-bottom: 5%;
 }
 
+.row {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0;
+}
+
 /*--/ Sections /--*/
 
 .sect-4 {
@@ -144,17 +150,29 @@ a:hover {
 .title-s {
   font-weight: 600;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .title-s {
+    font-size: 1.15rem;
+  }
 }
 
 /*--/ Title A /--*/
 
 .title-box {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .title-box {
+    margin-bottom: 2rem;
+  }
 }
 
 .title-a {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   text-transform: uppercase;
 }

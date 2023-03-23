@@ -18,6 +18,7 @@ const MyNavbar = () => {
   };
 
   useEffect(() => {
+    handleScroll();
     window.addEventListener("scroll", handleScroll);
 
     return () => {

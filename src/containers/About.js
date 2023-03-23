@@ -17,7 +17,7 @@ const About = () => {
               }}
             >
               <img
-                src="img/avatar.jpg"
+                src="img/avatar.png"
                 className="img-fluid b-shadow-a"
                 width="70%"
                 alt=""
@@ -32,7 +32,15 @@ const About = () => {
                 justifyContent: "center",
               }}
             >
-              <h4 style={{ marginTop: "1rem" }}>About Me</h4>
+              <h4
+                style={{
+                  marginTop: "1rem",
+                  fontWeight: "bold",
+                  textTransform: "uppercase",
+                }}
+              >
+                About Me
+              </h4>
               <div
                 style={{
                   backgroundColor: "#66b3ff",

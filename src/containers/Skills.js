@@ -24,7 +24,10 @@ const Skills = () => {
       <Container>
         <Row>
           <Col>
-            <div className="title-box text-center">
+            <div
+              className="title-box text-center"
+              style={{ marginBottom: "1rem" }}
+            >
               <h3 className="title-a">Skills</h3>
               <div className="line-mf"></div>
             </div>

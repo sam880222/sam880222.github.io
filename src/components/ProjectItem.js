@@ -12,7 +12,12 @@ const ProjectItem = ({
       style={{ padding: "0px 1rem 4rem" }}
     >
       <Card
-        style={{ backgroundColor: "#181818", padding: 0, overflow: "hidden" }}
+        style={{
+          backgroundColor: "#181818",
+          padding: 0,
+          overflow: "hidden",
+          borderRadius: "1rem",
+        }}
       >
         {!video ? (
           <Carousel
