@@ -752,6 +752,52 @@ a:hover {
 }
 
 /*======================================
+//--//-->   EXPERIENCE
+======================================*/
+.timeline {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: fit-content;
+  text-align: start;
+  padding-left: 2rem;
+  margin: auto;
+  border-left: #66b3ff solid 4px;
+  box-sizing: border-box;
+}
+
+.timeline-item {
+  position: relative;
+  margin: 1rem 0;
+  display: block;
+}
+
+.timeline-item::after {
+  background-color: #66b3ff;
+  left: calc(-2.75rem - 2px);
+  border-radius: 999px;
+  height: 1.5rem;
+  width: 1.5rem;
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+}
+
+.timeline-item p {
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item .work-description {
+  font-size: 0.875rem;
+}
+
+@media (min-width: 576px) {
+  .timeline-item .work-description {
+    font-size: 1rem;
+  }
+}
+
+/*======================================
 //--//-->   SERVICES
 ======================================*/
 

@@ -37,11 +37,11 @@ const Education = () => {
                 Computer Science & Information Engineering
               </span>
               <h5 className="mt-4">Master’s Degree</h5>
-              <span className="me-4 italic">GPA: 4.19/4.3</span>
-              <span>Since Sep. 2021</span>
+              <span className="me-4">GPA: 4.19/4.3</span>
+              <span className="fst-italic">Since Sep. 2021</span>
               <h5 className="mt-4">Bachelor’s Degree</h5>
               <span className="me-4">GPA: 4.2/4.3 (top 4%)</span>
-              <span>Sep. 2017 – June</span>
+              <span className="fst-italic">Sep. 2017 – June</span>
             </Col>
           </Row>
         </div>

@@ -8,8 +8,8 @@ const ProjectItem = ({
 }) => {
   return (
     <div
-      className="col-xxl-3 col-lg-4 col-md-6"
-      style={{ padding: "0px 1rem 4rem" }}
+      className="col-xxl-3 col-lg-4 col-md-6 mb-4 mb-sm-5"
+      style={{ padding: "0px 1rem" }}
     >
       <Card
         style={{
